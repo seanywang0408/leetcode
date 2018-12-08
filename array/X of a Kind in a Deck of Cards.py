@@ -16,4 +16,3 @@ class Solution:
         return reduce(gcd, count) > 1
 
         # gcd(a,b) is to find the greatest common divisor of a and b
-try
