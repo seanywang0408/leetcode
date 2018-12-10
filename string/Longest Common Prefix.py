@@ -1,3 +1,5 @@
+
+# use set *, and zip tricks O(n) time, O(1) space
 class Solution:
     # @return a string
     def longestCommonPrefix(self, strs):
@@ -7,9 +9,10 @@ class Solution:
         for i, letter_group in enumerate(zip(*strs)):
             if len(set(letter_group)) > 1:
                 return strs[0][:i]
-        else:
-            return min(strs)
+        return min(strs)
 
+
+# use the shortest str as criterion O(mn) time, O(1) space
 class Solution:
  	def longestCommonPrefix(self, strs):
         """
