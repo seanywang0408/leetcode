@@ -1,4 +1,5 @@
 # my version O(n) time, O(1) space
+# two pointers 
 class Solution:
     def compress(self, chars):
         """
